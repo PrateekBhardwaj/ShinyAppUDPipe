@@ -19,7 +19,16 @@ library(ggraph)
 library(ggplot2)
 library(wordcloud)
 
-udpipeEnglish <-"C:/ISB CBA/Text Analytics/Lecture 4/english-ewt-ud-2.4-190531.udpipe"
+#Check if enlish udpipe file exists, if not, download it
+if (file.exists("./english-ewt-ud-2.4-190531.udpipe"))
+{
+  udpipeEnglish<-"./english-ewt-ud-2.4-190531.udpipe"
+} else
+{
+  udpipeEnglish <- udpipe_download_model(language = "english")
+}
+
+
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
