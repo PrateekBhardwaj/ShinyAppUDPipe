@@ -1,12 +1,3 @@
-# Prateek Bhardwaj
-# Student id :- 11915037
-# Email id :- prateek_bhardwaj_cba2020s@isb.edu      
-# Rohit Kumar 
-# Student id :- 11915060 
-# Email id : rohit_kumar_cba2020s@isb.edu 
-# Chirag Gupta 
-# Student id :- 11915053 
-# Email id :- chirag_gupta_cba2020s@isb.edu
 
 library(shiny)
 library(dplyr)
